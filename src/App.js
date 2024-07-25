@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Footersection from './components/Footersection';
+import Headersection from './components/Headersection';
+import Phoneslider from './components/Phoneslider';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Studio from './components/Studio';
+import Featured from './components/Featureprojects';
+import Featureprojects from './components/Featureprojects';
+import Impact from './components/Impact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className=' overflow-hidden'>
+    <Headersection/>
+    <Phoneslider/>
+    <Studio/>
+    <Featureprojects/>
+    <Impact/>
+    <Footersection/>
+    </main>
   );
 }
 
