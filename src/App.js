@@ -8,6 +8,10 @@ import Studio from './components/Studio';
 import Featured from './components/Featureprojects';
 import Featureprojects from './components/Featureprojects';
 import Impact from './components/Impact';
+import Clients from './components/Clients';
+import Faq from './components/Faq';
+import ScrolltotopButton from './components/ScrollToTopButton'
+
 
 function App() {
   return (
@@ -17,7 +21,10 @@ function App() {
     <Studio/>
     <Featureprojects/>
     <Impact/>
-    <Footersection/>
+    <Clients/>
+    <Faq/>
+      <Footersection/>
+      <ScrolltotopButton/>
     </main>
   );
 }

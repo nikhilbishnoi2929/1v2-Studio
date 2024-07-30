@@ -5,10 +5,11 @@
 @tailwind utilities;
 
 
-.after_border{
+.after_border {
   position: relative;
 }
-.after_border:hover::after{
+
+.after_border:hover::after {
   content: "";
   position: absolute;
   background-image: url(../src/assets/image/svg/btn_Border_Top.svg);
@@ -20,10 +21,12 @@
   top: -3px;
   left: -14px;
 }
-.after_border_b{
+
+.after_border_b {
   position: relative;
 }
-.after_border_b:hover:before{
+
+.after_border_b:hover:before {
   content: "";
   position: absolute;
   background-image: url(../src/assets/image/svg/btn_Border_Bottom.svg);
@@ -33,12 +36,14 @@
   width: 73.6px;
   height: 14.21px;
   bottom: -4.5px;
-  right: -13px;  
+  right: -13px;
 }
- .get_started_btn{
+
+.get_started_btn {
   position: relative;
- }
- .get_started_btn::before{
+}
+
+.get_started_btn::before {
   content: "";
   position: absolute;
   background-image: url(../src/assets/image/svg/get_Started_Btn.svg);
@@ -49,66 +54,198 @@
   height: 47.19px;
   bottom: 0;
   right: 0;
-   z-index: 10;
+  z-index: 10;
 }
-.btn_Contact{
+
+.btn_Contact {
   background-image: url(../src/assets/image/svg/get_Started_Btn.svg);
   background-repeat: no-repeat;
 }
-.btn_Contact:hover{
+
+.btn_Contact:hover {
   background-image: url(../src/assets/image/svg/hover_Btn.svg);
   background-repeat: no-repeat;
 }
+
 .custom_duration {
   transition: all 500ms linear !important;
 }
-.after_Newsltter{
+
+.after_Newsltter {
   position: relative;
 }
-.after_Newsltter::after{
-content: "";
-position: absolute;
-background-image: url(./assets/image/svg/our_Newletter_Top.svg);
-width: 373px;
-height: 22px;
-top:-2px;
- left: -11px;
+
+.after_Newsltter::after {
+  content: "";
+  position: absolute;
+  background-image: url(./assets/image/svg/our_Newletter_Top.svg);
+  width: 373px;
+  height: 22px;
+  top: -2px;
+  left: -11px;
 }
-.after_Newsltter_2::before{
+
+.after_Newsltter_2::before {
   content: "";
   position: absolute;
   background-image: url(./assets/image/svg/our_Newletter_Bottom.svg);
   width: 373px;
   height: 22px;
-  bottom:-10px;
-   right: -25px;
+  bottom: -10px;
+  right: -25px;
+}
+
+.gaming_After {
+  position: relative;
+}
+
+.gaming_After::after {
+  content: "";
+  position: absolute;
+  background-image: url(./assets/image/svg/gaming_After.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 421px;
+  height: 21.5px;
+  top: 5px;
+  left: -5px;
+}
+
+.feature_Slider .slick-track {
+  display: flex !important;
+  height: inherit !important;
+}
+
+.gaming_Before::before {
+  content: "";
+  position: absolute;
+  background-image: url(./assets/image/svg/gaming_Innovation_Bottom.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 421px;
+  height: 21.5px;
+  bottom: -3px;
+  right: 103px;
+}
+
+.gaming_Before_2::before {
+  content: "";
+  position: absolute;
+  background-image: url(./assets/image/svg/gaming_Innovation_Bottom.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 421px;
+  height: 21.5px;
+  bottom: -3px;
+  right: -20px;
+}
+
+.slider_center .slick-track {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.nav-toggle-items {
+  @apply w-10 h-1 rounded-xl bg-white block custom_duration;
+}
+
+.cross span:nth-child(1) {
+  transform: rotate(46deg) translateY(13px) translateX(3.5px);
+}
+
+.cross span:nth-child(2) {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.cross span:nth-child(3) {
+  transform: rotate(-47deg) translateY(-13px) translateX(4px);
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  align-items: center;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 0;
+}
+
+.slick-dots li button:before {
+  font-size: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.slick-dots li {
+  background: white;
+  opacity: 70%;
+  border-radius: 8px !important;
+  width: 50px !important; 
+  height: 10px !important; 
+  margin: 0px 8px !important;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+.slick-dots{
+gap: 10px !important;
+display: flex !important;
+}
+.slick-dots li.slick-active{
+  background: linear-gradient(90deg, #FF1E2F 0%, #3EBFFF 100%);
+  border-radius: 30px;
+  height: 10px;
+  width: 172px !important;
+}
+
+/* Ensure transitions are applied */
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1040px) {
+  .gaming_Before::before {
+    right: 40px;
   }
- 
-  .gaming_After{
-    position: relative;
+
+  .flex_wrap {
+    flex-wrap: wrap;
   }
-  .gaming_After::after{
-    content: "";
-    position: absolute;
-    background-image: url(./assets/image/svg/gaming_After.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 421px;
-    height: 21.5px;
-    top: 4px;
-    left: -5px;
-  }
-   
-  .gaming_Before::before{
-    content: "";
-    position: absolute;
-    background-image: url(./assets/image/svg/gaming_Innovation_Bottom.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 421px;
-    height: 21.5px;
-    bottom: -3px;
+}
+
+@media (max-width: 992px) {
+  .gaming_Before::before {
     right: 103px;
   }
+
+  .gaming_Before::before {
+    display: none;
+  }
+
+  .gaming_After::after {
+    display: none
+  }
+
+  .gaming_Before_2::before {
+    display: none;
+  }
+
+  .gaming_Before::before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .after_Newsltter::after {
+    display: none;
+  }
+
+  .after_Newsltter_2::before {
+    display: none;
+  }
+}
