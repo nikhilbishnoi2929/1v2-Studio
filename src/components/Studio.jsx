@@ -19,7 +19,7 @@ const Studio = () => {
                     <div className='lg:w-6/12 w-[100%] flex  lg:justify-start justify-center px-3'>
                         <div className=' relative'>
                         <img className=' w-full max-w-[517px] z-20 relative max-lg:max-w-[460px] max-md:max-w-[400px]' src={pushing_Boundaries} alt="pushing_Boundaries" />
-                        <img src={studio_Ellips} className=' absolute top-[-140px] left-[-90px] z-0 ' alt="studio_Ellips" />
+                        <img src={studio_Ellips} className=' absolute top-[-140px] pointer-events-none left-[-90px] z-0 ' alt="studio_Ellips" />
                         </div>
                            </div>
                     <div className='lg:w-6/12 w-[100%] px-3 flex items-center lg:justify-end justify-center max-lg:pt-12  '>

@@ -32,7 +32,7 @@ const Clients = () => {
   
   return (
     <div className=' bg-clients_Bg mt-[-2px] relative bg-black bg-cover bg-no-repeat'>
-      <div className='flex justify-center relative pt-[87px] max-sm:pt-0 max-md:pt-[70px]'>
+      <div className='flex justify-center relative pt-[87px] max-lg:pt-[79px] max-sm:pt-0 max-md:pt-[70px]'>
         <h2 className='font-orbitron font-bold text-center md:text-start  text-42 max-md:text-[38px] max-sm:text-[30px] max-sm:leading-[39px] max-md:leading-[45px] leading-[54.6px] text-white about_Line_Bottom'>Clients Testimonials</h2>
         <img src={clients_Svg} alt="about_Line_Bottom" className='absolute h-[57px] xl:block hidden w-full bottom-[-17px] left-0' />
       </div>
@@ -115,7 +115,7 @@ const Clients = () => {
       
     </Slider>
     </div>
-    <div className=' max-md:hidden z-0 absolute right-[-45px] max-xl:right-[12px] bottom-[-112px]'>
+    <div className=' max-md:hidden z-0 max-lg:hidden absolute right-[-45px] max-xl:right-[12px] bottom-[-112px]'>
         <Rounded_Line/>
       </div>
       </div>

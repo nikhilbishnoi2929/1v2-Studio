@@ -8,16 +8,16 @@ import ellips_Footer_Two from '../assets/image/svg/ellips_Footer_Two.svg';
 import ellips_Card from '../assets/image/svg/card_Bg_Ellips.svg';
 import footer_Ellips_Three from '../assets/image/svg/footer_Ellipse_Three.svg';
 import footer_Ellips_Four from '../assets/image/svg/footer_Ellips_Four.svg';
-import footer_Card_Ellips from '../assets/image/svg/footer_Card_Ellips.svg'
+
 const Footersection = () => {
   return (
     <div className='bg-footer_bg mt-[-2px] bg-cover bg-no-repeat bg-black relative' id='Section_6'>
-      <div className='container max-w-[1164px] px-3 mx-auto pt-[105px] max-sm:pt-[50px] relative'>
+      <div className='container max-w-[1164px] px-3 mx-auto pt-[105px] max-lg:pt-[80px] max-md:pt-[60px] max-sm:pt-12 relative'>
         <div className='bg-card_footer backdrop:blur-(50) z-20 relative bg-100% bg-no-repeat max-w-[900px] bg-[#FFFFFF0A]  pt-[44px] pb-[45px]  flex justify-center mx-auto '>
           <div className='flex flex-col text-center  items-center'>
-            <h2 className='font-orbitron z-20 relative font-bold max-md:text-[33px] max-md:leading-[40px] max-sm:text-[28px] max-sm:leading-[30px] text-40 leading-[63px] text-white max-w-[660px] '>Subscribe to  <span className='after_Newsltter after_Newsltter_2'>our newsletter</span></h2>
+            <h2 className='font-orbitron z-20 relative font-bold max-md:text-[33px] max-md:leading-[40px] max-sm:text-[20px] max-sm:leading-[24px] text-40 leading-[63px] text-white max-w-[660px] '>Subscribe to  <span className='after_Newsltter after_Newsltter_2'>our newsletter</span></h2>
             <p className='font-poppins z-20 relative font-normal text-lg max-sm:text-sm leading-[28px] text-white max-w-[554px] opacity-[70%] pt-3 '>Nulla sollicitudin nullam in scelerisque. Dolor neque pulvinar porttitor id eget volutpat faucibus sed. Tellus libero.</p>
-            <div className='max-w-[489px] z-20 relative max-sm:max-w-[320px] border-[1px] mt-9 border-[#FFFFFF45] p-[6px] pl-[15px] flex w-full justify-between'>
+            <div className='max-w-[489px] z-20 relative max-sm:max-w-[320px] border-[1px] mt-9 max-sm:mt-6 border-[#FFFFFF45] p-[6px] pl-[15px] flex w-full justify-between'>
               <input type="text" placeholder='Enter your email' className=' outline-none w-full mr-3 bg-transparent border-0 opacity-[70%] font-poppins text-lg leading-[28px] text-white ' />
               <div className=' max-w-[151px]  z-20 relative w-full max-sm:hidden h-[47.19px] bg-btn_Border flex justify-center items-center cursor-pointer btn_Contact custom_duration'>
                 <h3 className='font-poppins font-normal text-base leading-[24px] text-white '>Submit Now</h3>
@@ -47,10 +47,10 @@ const Footersection = () => {
         </div>
         <img src={footer_Ellips} className='absolute top-[-44px] left-[280px] hidden lg:block hidden37 z-0 ' alt="footer_Ellips" />
         <img src={ellips_Card} className=' absolute max-md:hidden top-[56px] ' alt="ellips_Card" />
-        <div className='left-[-67px]  max-xl:left-[15px] max-md:hidden absolute top-[-60px]'>
+        <div className='left-[-67px]  max-xl:left-[15px] max-lg:hidden absolute top-[-60px]'>
         <Rounded_Line />
       </div>
-      <div className='right-[-68.5px]  max-xl:right-[15px] max-md:hidden absolute bottom-[90px]'>
+      <div className='right-[-68.5px]  max-xl:right-[15px] max-lg:hidden absolute bottom-[90px]'>
         <Rounded_Line />
       </div>
       </div>
@@ -60,11 +60,11 @@ const Footersection = () => {
         <h3 className=' font-poppins font-medium text-base leading-[24px] text-white opacity-[50%] pt-[22px] pb-[18px]'>Copyright@2024 All right reserved</h3>
       </div>
       
-      <img className=' absolute z-0 top-[-332px] max-md:hidden left-0' src={footer_Ellips_Three} alt="footer_Ellips_Three" />
-      <img className=' absolute z-0 top-[30px] max-md:hidden right-[30px]' src={footer_Ellips_Four} alt="footer_Ellips_Three" />
+      <img className=' absolute z-0 top-[-332px] max-lg:hidden left-0' src={footer_Ellips_Three} alt="footer_Ellips_Three" />
+      <img className=' absolute z-0 top-[30px] max-lg:hidden right-[30px]' src={footer_Ellips_Four} alt="footer_Ellips_Three" />
 
-      <img src={ellips_Footer_Two} className='absolute max-md:hidden z-0 right-0 bottom-[61px]' alt="ellips_Footer_Two " />
-      <img src={ellips_Footer} className=' absolute max-md:hidden bottom-[75px] z-0 left-0' alt="ellips_Footer" />
+      <img src={ellips_Footer_Two} className='absolute max-lg:hidden z-0 right-0 bottom-[61px]' alt="ellips_Footer_Two " />
+      <img src={ellips_Footer} className=' absolute max-lg:hidden bottom-[75px] z-0 left-0' alt="ellips_Footer" />
     </div>
   )
 }

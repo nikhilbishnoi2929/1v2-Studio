@@ -9,7 +9,7 @@ const Impact = () => {
   return (
     <div className=' bg-impact_Bg bg-black mt-[-2px] relative' id='Section_4'>
       <div className='flex justify-center relative'>
-        <h2 className='font-orbitron font-bold z-20  text-42 max-md:text-[38px] max-sm:text-[32px] max-sm:leading-[39px] max-md:leading-[45px] leading-[54.6px] text-white about_Line_Bottom'>Our Impact</h2>
+        <h2 className='font-orbitron font-bold z-20  text-42 max-md:text-[40px] max-sm:text-[38px] max-sm:leading-[39px] max-md:leading-[45px] leading-[54.6px] text-white about_Line_Bottom'>Our Impact</h2>
         <img src={our_Impact} alt="about_Line_Bottom" className='absolute h-[57px] xl:block hidden w-full bottom-[-17px] z-0 left-0' />
       </div>
       <div className=' container max-w-[1164px] px-3 mx-auto relative '>
@@ -27,12 +27,12 @@ const Impact = () => {
           </div>
           </div>
         </div>
-        <div className=' absolute left-[-64px] max-xl:left-3 z-10 bottom-[-96px] max-lg:left-[12px] max-md:hidden'>
+        <div className=' absolute left-[-64px] max-xl:left-3 z-10 bottom-[-96px] max-lg:left-[12px] max-lg:hidden'>
           <Rounded_Line />
         </div>
       </div>
 
-      <img src={clients_Ellips_Right} className=' absolute left-[0px] z-0 top-[-290px]' alt="clients_Ellips" />
+      <img src={clients_Ellips_Right} className=' absolute left-[0px] z-0 pointer-events-none top-[-290px]' alt="clients_Ellips" />
 
     </div>
   )
