@@ -114,7 +114,6 @@
 
 .feature_Slider .slick-track {
   display: flex !important;
- 
 }
 .feature_Slider .slick-track .slick-slide {
   margin: 0 12px;
@@ -195,7 +194,7 @@ display: flex !important;
 .transition-transform {
   transition: transform 0.3s ease;
 }
-
+ 
 @media (max-width: 1040px) {
   .gaming_Before::before {
     right: 40px;

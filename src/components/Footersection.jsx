@@ -11,9 +11,9 @@ import footer_Ellips_Four from '../assets/image/svg/footer_Ellips_Four.svg';
 
 const Footersection = () => {
   return (
-    <div className='bg-footer_bg mt-[-2px] bg-cover bg-no-repeat bg-black relative' id='Section_6'>
+    <div className='bg-footer_bg mt-[-2px] bg-cover bg-no-repeat bg-black relative' id='section_6'>
       <div className='container max-w-[1164px] px-3 mx-auto pt-[105px] max-lg:pt-[80px] max-md:pt-[60px] max-sm:pt-12 relative'>
-        <div className='bg-card_footer backdrop:blur-(50) z-20 relative bg-100% bg-no-repeat max-w-[900px] bg-[#FFFFFF0A] pt-[44px] pb-[45px] flex justify-center mx-auto '>
+        <div className='bg-card_footer backdrop:blur-(50) z-20 relative bg-100% bg-no-repeat max-w-[900px] bg-[#FFFFFF0A] pt-[44px] pb-[45px] flex justify-center mx-auto ' data-aos="flip-left">
           <div className='flex flex-col text-center items-center'>
             <h2 className='font-orbitron z-20 relative font-bold max-md:text-[33px] max-md:leading-[40px] max-sm:text-[20px] max-sm:leading-[24px] text-40 leading-[63px] text-white max-w-[660px] '>Subscribe to <span className='after_Newsltter after_Newsltter_2'>our newsletter</span></h2>
             <p className='font-poppins z-20 relative font-normal text-lg max-sm:text-sm leading-[28px] text-white max-w-[554px] opacity-[70%] pt-3 '>Nulla sollicitudin nullam in scelerisque. Dolor neque pulvinar porttitor id eget volutpat faucibus sed. Tellus libero.</p>
@@ -30,15 +30,15 @@ const Footersection = () => {
           
         </div>
         <div className='flex justify-center pt-[46px] pb-[43px]'>
-          <div className='flex flex-col items-center z-10 text-center'>
+          <div className='flex flex-col items-center z-10 text-center' data-aos="flip-right">
             <img className=' z-10 relative cursor-pointer' src={logo_Img} alt="logo_Img" />
             <p className=' max-w-[538px] z-10 relative font-poppins font-normal leading-[28px] text-lg max-sm:text-sm text-white pt-5 opacity-[70%] '>Nulla sollicitudin nullam in scelerisque. Dolor neque pulvinar porttitor id eget volutpat faucibus sed. Tellus libero.</p>
             <div className=' flex gap-[20px] pt-4'>
-              <a href="https://x.com/?lang=en" target='blank_' className='border-[2.46px] z-10 border-[#3EBFFF] hover:border-white duration-500 bg-bg_Red w-[43.05px] h-[43.05px] rounded-[50px] flex justify-center items-center'>
+              <a href="https://x.com/?lang=en" target='blank_' className='border-[2.46px] z-10 border-[#3EBFFF] hover:border-white custom_duration bg-bg_Red w-[43.05px] h-[43.05px] rounded-[50px] flex justify-center items-center'>
                 <Twitter_Icon />
             </a>
               <a href="https://discord.com/" target='blank_'
-              className='border-[2.46px] z-10 relative border-[#3EBFFF] bg-bg_Red w-[43.05px] h-[43.05px] hover:border-white duration-500 rounded-[50px] flex justify-center items-center'>
+              className='border-[2.46px] z-10 relative border-[#3EBFFF] bg-bg_Red w-[43.05px] h-[43.05px] hover:border-white custom_duration rounded-[50px] flex justify-center items-center'>
               <Discord_Icon />
              
               </a>

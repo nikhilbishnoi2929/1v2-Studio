@@ -34,7 +34,7 @@ const Faq = () => {
         setActiveIndex(activeIndex === index ? null : index);
     };
     return (
-        <div className=' bg-accordion_Bg bg-black bg-no-repeat bg-cover mt-[-2px] lg:pb-[55px] md:pb-[48px] max-sm:pb-[15px] pb-3' id='Section_5'>
+        <div className=' bg-accordion_Bg bg-black bg-no-repeat bg-cover mt-[-2px] lg:pb-[55px] md:pb-[48px] max-sm:pb-[15px] pb-3' id='section_5'>
             <div className=' container mx-auto px-3'>
                 <div className='flex justify-center relative pt-[101px] max-lg:pt-[80px] max-md:pt-[70px] max-sm:pt-12'>
                     <h2 className='font-orbitron font-bold text-42 max-md:text-[38px] max-sm:text-[35px] max-sm:leading-[39px] max-md:leading-[45px] leading-[54.6px] text-white'>
@@ -48,15 +48,15 @@ const Faq = () => {
                 </div>
             </div>
             <div className=' container max-w-[1164px] px-3'>
-                <div className=' max-w-[480px] sm:max-w-[576px] z-30 md:max-w-[768px] lg:max-w-[884px] mx-auto lg:pt-[72px] md:pt-16 pt-14'>
+                <div className=' max-w-[480px] sm:max-w-[576px] z-30 md:max-w-[768px] lg:max-w-[884px] mx-auto lg:pt-[72px] md:pt-16 pt-14' data-aos="zoom-in-up">
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className={` overflow-hidden ease-linear duration-300 ${activeIndex === index ? " z-30 border-[1px] border-sky_border bg-accordion_Color shadow_border" : "border-transparent"} mt-6`}
+                            className={` overflow-hidden ease-linear custom_duration ${activeIndex === index ? " z-30 border-[1px] border-sky_border bg-accordion_Color shadow_border" : "border-transparent"} mt-6`}
                         >
                             <button
                                 onClick={() => toggleAccordion(index)}
-                                className={`${activeIndex === index ? "p-[8px_8px_0px_8px] z-30 lg:p-[21px_20px_0px_20px] border-transparent" : "p-2 lg:p-[21px_20px]"} w-full text-left bg-blur_black backdrop-blur-lg flex items-center justify-between border-[1px] border-[#FFFFFF4D] transition duration-300 ease-in-out `}
+                                className={`${activeIndex === index ? "p-[10px_10px_0px_10px] z-30 lg:p-[21px_20px_0px_20px] border-transparent" : "p-2 lg:p-[21px_20px]"} w-full text-left bg-blur_black backdrop-blur-lg flex items-center justify-between border-[1px] border-[#FFFFFF4D] transition custom_duration ease-in-out `}
                             >
                                 <span className="font-orbitron font-medium text-base leading-6 z-30 sm:text-lg md:text-[20px] md:leading-[26px] lg:text-2xl lg:leading-9 text-white">{faq.question}</span>
                                 <span className="float-right z-30">

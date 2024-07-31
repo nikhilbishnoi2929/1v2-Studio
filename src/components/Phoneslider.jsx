@@ -53,13 +53,13 @@ const Phoneslider = () => {
         <div className=' bg-black_Section mt-[-2px] relative z-20'>
             <div className=' max-w-[1478px] w-full mx-auto pt-[35.31px] pb-[35.31px] relative '>
                 <div className='slider_center'>
-                <Slider {...settings}>
-                    <img className='pl-[50px] cursor-pointer' src={slider_Img_1} alt="slider_Img_1" />
-                    <img className='pl-[50px] cursor-pointer' src={slider_Img_2} alt="slider_Img_1" />
-                    <img className='pl-[50px] cursor-pointer' src={slider_Img_3} alt="slider_Img_1" />
-                    <img className='pl-[50px] cursor-pointer' src={slider_Img_4} alt="slider_Img_1" />
-                    <img className='pl-[50px] cursor-pointer' src={slider_Img_5} alt="slider_Img_1" />
-                    <img className='pl-[50px] cursor-pointer' src={slider_Img_6} alt="slider_Img_1" />
+                <Slider {...settings} >
+                    <img className='pl-[50px] cursor-pointer' src={slider_Img_1} alt="slider_Img_1" data-aos="flip-left" />
+                    <img className='pl-[50px] cursor-pointer' src={slider_Img_2} alt="slider_Img_1" data-aos="flip-right" />
+                    <img className='pl-[50px] cursor-pointer' src={slider_Img_3} alt="slider_Img_1" data-aos="flip-left" />
+                    <img className='pl-[50px] cursor-pointer' src={slider_Img_4} alt="slider_Img_1" data-aos="flip-right" />
+                    <img className='pl-[50px] cursor-pointer' src={slider_Img_5} alt="slider_Img_1" data-aos="flip-left" />
+                    <img className='pl-[50px] cursor-pointer' src={slider_Img_6} alt="slider_Img_1" data-aos="flip-right" />
                 </Slider>
                 </div>
             </div>
