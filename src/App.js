@@ -15,7 +15,7 @@ import ScrolltotopButton from './components/ScrollToTopButton'
 
 function App() {
   return (
-    <main className=' overflow-hidden'>
+    <main className=' overflow-hidden max-w-[1920px] mx-auto'>
     <Headersection/>
     <Phoneslider/>
     <Studio/>

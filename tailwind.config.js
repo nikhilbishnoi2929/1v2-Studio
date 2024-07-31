@@ -63,8 +63,8 @@ module.exports = {
       backgroundSize: {
         "100%": "100% 100%",
       },
-      blur:{
-        50: "50px"
+      backdropBlur: {
+        '100': '100px',
       },
       
     },

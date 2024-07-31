@@ -14,11 +14,39 @@ const Featureprojects = () => {
         infinite: true,
         autoplay: true,
         arrows: false,
-        speed: 4000,
-        slidesToShow: 1,
-        cssEase: "linear",
+        speed: 2000,
+        slidesToShow: 3,
         variableWidth: true,
         slidesToScroll: 1,
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    centerMode: false,
+                }
+            }
+        ],
 
         appendDots: dots => (
             <div
@@ -42,38 +70,36 @@ const Featureprojects = () => {
                     <h2 className='font-orbitron font-bold  z-20  text-42 max-sm:text-[30px] leading-[54.6px] text-white about_Line_Bottom'>Featured Projects</h2>
                     <img src={bottom_Text_Line} alt="about_Line_Bottom" className='absolute hidden xl:block z-0 w-full bottom-[-17px] left-0' />
                 </div>
-                <div className=' feature_Slider z-40  pt-[89px] max-sm:pt-12 max-md:pt-[60px] pb-[125px] '>
+                <div className=' feature_Slider z-40 pt-[89px] max-sm:pt-12 max-md:pt-[60px] max-lg:pb-[90px] pb-[125px] '>
                     <Slider {...setting_s} className='h-full'>
-                        <div className='bg-card_Slider mx-3 max-sm:mx-32 z-20 relative  h-[461px] bg-cover bg-no-repeat max-w-[364px] p-[20px] bg-[#FFFFFF0A]'>
+                        <div className='bg-card_Slider w-full backdrop-blur-100 z-50 relative min-h-[461px]  bg-cover max-sm:bg-100% bg-no-repeat max-w-[364px] p-5  bg-[#FFFFFF0A]'>
                             <img className=' w-[324px] ' src={project_Slider_One} alt="" />
-                            <h3 className='pt-3 font-poppins font-bold text-sm leading-[18px] text-text-blue'>400+ <span className=' text-white opacity-[70%] font-normal pl-[6px]'>Active Players</span> <span className=' pl-[10px]'>700+ </span> <span className='  text-white opacity-[70%] font-normal pl-[6px]'>Visits</span></h3>
+                            <h3 className='pt-3 font-poppins font-bold text-sm leading-[18px] text-text-blue'>400+ <span className=' text-white opacity-[70%] font-normal pl-[6px]'>Active Players</span> <span className=' pl-[10px]'>700+ </span> <span className='text-white opacity-[70%] font-normal pl-[6px]'>Visits</span></h3>
                             <h3 className=' font-orbitron font-bold text-2xl leading-[31.2px] text-white pt-4'>Dino Island</h3>
                             <p className=' font-poppins font-normal text-lg leading-[28px] text-white opacity-[70%] max-w-[324px] pt-3'>Embark on an epic adventure in Dino Island, where you can explore a prehistoric world filled with dinosaurs and hidden treasures.</p>
                         </div>
-                        <div className='bg-card_Slider mx-3 max-sm:mx-32 z-20 relative h-[461px] bg-cover bg-no-repeat max-w-[364px] p-[20px] bg-[#FFFFFF0A]'>
+                        <div className='bg-card_Slider w-full backdrop-blur-100 z-50 relative min-h-[461px] bg-cover max-sm:bg-100% bg-no-repeat max-w-[364px] p-5 bg-[#FFFFFF0A]'>
                             <img className=' w-[324px] ' src={project_Slider_two} alt="" />
                             <h3 className='pt-3 font-poppins font-bold text-sm leading-[18px] text-text-blue'>400+ <span className=' text-white opacity-[70%] font-normal pl-[6px]'>Active Players</span> <span className=' pl-[10px]'>700+ </span> <span className='  text-white opacity-[70%] font-normal pl-[6px]'>Visits</span></h3>
                             <h3 className=' font-orbitron font-bold text-2xl leading-[31.2px] text-white pt-4'>Lava Land</h3>
                             <p className=' font-poppins font-normal text-lg leading-[28px] text-white opacity-[70%] max-w-[324px] pt-3'>Embark on thrilling adventures in a volcanic world, featuring unique challenges and excitement, crafted exclusively for Roblox players.</p>
                         </div>
-                        <div className='bg-card_Slider mx-3 max-sm:mx-32  z-20 relative  h-[461px] bg-cover bg-no-repeat max-w-[364px] p-[20px] bg-[#FFFFFF0A]'>
+                        <div className='bg-card_Slider w-full backdrop-blur-100 z-50 relative min-h-[461px] bg-cover max-sm:bg-100% bg-no-repeat max-w-[364px] p-5 bg-[#FFFFFF0A]'>
                             <img className=' w-[324px] ' src={project_Slider_three} alt="" />
                             <h3 className='pt-3 font-poppins font-bold text-sm leading-[18px] text-text-blue'>400+ <span className=' text-white opacity-[70%] font-normal pl-[6px]'>Active Players</span> <span className=' pl-[10px]'>700+ </span> <span className='  text-white opacity-[70%] font-normal pl-[6px]'>Visits</span></h3>
                             <h3 className=' font-orbitron font-bold text-2xl leading-[31.2px] text-white pt-4'>3D Maze</h3>
                             <p className=' font-poppins font-normal text-lg leading-[28px] text-white opacity-[70%] max-w-[324px] pt-3'>Develop a 3D maze game in Roblox: a fun, challenging project that enhances creativity and problem-solving skills for students.</p>
                         </div>
-                        <div className='bg-card_Slider mx-3 max-sm:mx-32 z-20 relative h-[461px] bg-cover bg-no-repeat max-w-[364px] p-[20px] bg-[#FFFFFF0A]'>
+                        <div className='bg-card_Slider w-full z-50 backdrop-blur-100 relative min-h-[461px] bg-cover max-sm:bg-100% bg-no-repeat max-w-[364px] p-5 bg-[#FFFFFF0A]'>
                             <img className=' w-[324px] ' src={project_Slider_four} alt="" />
                             <h3 className='pt-3 font-poppins font-bold text-sm leading-[18px] text-text-blue'>400+ <span className=' text-white opacity-[70%] font-normal pl-[6px]'>Active Players</span> <span className=' pl-[10px]'>700+ </span> <span className='  text-white opacity-[70%] font-normal pl-[6px]'>Visits</span></h3>
                             <h3 className=' font-orbitron font-bold text-2xl leading-[31.2px] text-white pt-4'>Fireplace</h3>
                             <p className=' font-poppins font-normal text-lg leading-[28px] text-white opacity-[70%] max-w-[324px] pt-3'>Experience cozy and adventurous gameplay around a virtual hearth, blending relaxation and excitement uniquely on Roblox.</p>
                         </div>
 
+
                     </Slider>
                 </div>
-                <img src={featured_Ellips} alt="featured_Ellips" className="absolute pointer-events-none top-[60px] z-0 left-[40px]" />
-                <img src={featured_Ellips} alt="featured_Ellips" className="absolute pointer-events-none top-[40px] z-0 left-[32%]" /> 
-                  <img src={featured_Ellips} alt="featured_Ellips" className="absolute pointer-events-none top-[60px] z-0 right-[0%]" />
             </div>
             <img src={clients_Ellips_Right} className=' absolute max-md:hidden left-[0px] z-0 top-[-219px]' alt="clients_Ellips" />
 

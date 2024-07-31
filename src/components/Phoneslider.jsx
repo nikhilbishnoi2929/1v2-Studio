@@ -21,6 +21,7 @@ const Phoneslider = () => {
         speed: 4000,
         autoplaySpeed: 3000,
         cssEase: "linear",
+        pauseOnHover: true,
         responsive: [
             {
               breakpoint: 1024,
@@ -50,7 +51,7 @@ const Phoneslider = () => {
     };
     return (
         <div className=' bg-black_Section mt-[-2px] relative z-20'>
-            <div className=' max-w-[1478px] w-full mx-auto pt-[35.31px] pb-[35.31px]   relative '>
+            <div className=' max-w-[1478px] w-full mx-auto pt-[35.31px] pb-[35.31px] relative '>
                 <div className='slider_center'>
                 <Slider {...settings}>
                     <img className='pl-[50px] cursor-pointer' src={slider_Img_1} alt="slider_Img_1" />

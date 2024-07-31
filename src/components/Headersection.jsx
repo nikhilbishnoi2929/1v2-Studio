@@ -20,9 +20,9 @@ const Headersection = () => {
             <div className='container max-w-[1164px] px-3 mx-auto'>
                 <nav className='pt-[6px] pb-[8px]'>
                     <div className='flex justify-between items-center '>
-                        <img className='cursor-pointer' src={page_Logo} alt="page_Logo" />
+                        <img className='cursor-pointer max-md:max-w-[60px] max-sm:max-w-[53px]' src={page_Logo} alt="page_Logo" />
                         <div className='flex items-center gap-[114px] max-xl:gap-[70px]'>
-                            <ul className={`${data ? "right-0" : "right-[-100%]"} flex items-center justify-between z-[50] gap-[32px] max-xl:gap-[26px] max-lg:fixed max-lg:bg-[#0E0C0C] max-lg:w-full max-lg:h-full max-xl:top-0 max-lg:flex-col max-lg:justify-center duration-500`}>
+                            <ul className={`${data ? "right-0" : "right-[-100%]"} flex items-center justify-between z-[50] gap-[32px] max-xl:gap-[26px] max-lg:fixed max-lg:bg-header_Bg bg-black max-lg:w-full max-lg:h-full max-xl:top-0 max-lg:flex-col max-lg:justify-center duration-500`}>
                                 <li><a onClick={() => setData(!data)} href="#Section_1" className='text-nowrap font-poppins font-normal custom_duration text-white opacity-[70%] text-base leading-[24px] hover:opacity-[100%] hover:text-white custom_duration after_border after_border_b'>Home</a></li>
                                 <li><a onClick={() => setData(!data)} href="#Section_2" className='text-nowrap font-poppins font-normal custom_duration text-white opacity-[70%] text-base leading-[24px] hover:opacity-[100%] hover:text-white custom_duration after_border after_border_b'>About Us</a></li>
                                 <li><a onClick={() => setData(!data)} href="#Section_3" className='text-nowrap font-poppins font-normal custom_duration text-white opacity-[70%] text-base leading-[24px] hover:opacity-[100%] hover:text-white custom_duration after_border after_border_b'>Portfolio</a></li>
@@ -30,7 +30,7 @@ const Headersection = () => {
                                 <li><a onClick={() => setData(!data)} href="#Section_5" className='text-nowrap font-poppins font-normal custom_duration text-white opacity-[70%] text-base leading-[24px] hover:opacity-[100%] hover:text-white custom_duration after_border after_border_b'>Testimonial</a></li>
                                 <li><a onClick={() => setData(!data)} href="#Section_6" className='text-nowrap font-poppins font-normal custom_duration text-white opacity-[70%] text-base leading-[24px] hover:opacity-[100%] hover:text-white custom_duration after_border after_border_b'>Contact Us</a></li>
                                 <div className=' max-sm:block hidden '>
-                                    <div className='w-[151px]  h-[47.19px] bg-btn_Border flex justify-center items-center cursor-pointer btn_Contact custom_duration'>
+                                    <div className='w-[151px] h-[47.19px] bg-btn_Border flex justify-center items-center cursor-pointer btn_Contact custom_duration'>
                                         <h3 className='font-poppins font-normal text-base leading-[24px] text-white'>Get Started</h3>
                                     </div>
                                 </div>
@@ -52,16 +52,19 @@ const Headersection = () => {
                 </nav>
             </div>
             <div className='container max-w-[1164px] px-3 mx-auto relative' id='Section_1'>
-                <div className='pt-[144px] pb-[232px] z-10'>
+                <div className='pt-[144px] max-md:pt-7 pb-[232px] max-md:pb-[70px] z-10'>
+               <div className=' flex justify-center'>
+               <img className='z-0 md:hidden max-w-[325px]' src={mask_Group} alt="mask_Group" />
+               </div>
                     <h1 className='font-orbitron text-center md:text-start z-10 relative font-bold text-7xl max-md:leading-[70px] max-md:text-6xl max-sm:text-4xl leading-[93.6px] text-white md:max-w-[490px]'>Welcome to 1v2 Studio</h1>
-                    <p className='font-poppins z-10 text-center md:text-start max-sm:leading-[26px] relative font-normal text-xl max-sm:text-sm leading-[32px] text-white opacity-[70%] md:max-w-[465px] pt-4'>Leading the Way in Creating Unique and Innovative Experiences on Roblox.</p>
+                    <p className='font-poppins z-10 text-center md:text-start max-sm:leading-[21px] relative font-normal text-xl max-sm:text-sm leading-[32px] text-white opacity-[70%] md:max-w-[465px] pt-4'>Leading the Way in Creating Unique and Innovative Experiences on Roblox.</p>
                     <div className=' flex md:justify-start justify-center'>
-                        <div className='w-[151px] relative z-10 mt-[42px] h-[47.19px] bg-btn_Border flex justify-center items-center cursor-pointer btn_Contact custom_duration'>
+                        <div className='w-[151px] relative z-10 max-sm:mt-[34px] mt-[42px] h-[47.19px] bg-btn_Border flex justify-center items-center cursor-pointer btn_Contact custom_duration'>
                             <h3 className='font-poppins relative z-10 font-normal text-base leading-[24px] text-white'>Contact Us</h3>
                         </div>
                     </div>
                 </div>
-                <img className='absolute bottom-[105px] max-sm:bottom-[15px] z-0 right-0 ' src={mask_Group} alt="mask_Group" />
+                <img className='absolute bottom-[105px] max-md:hidden max-sm:bottom-[15px] z-0 right-0 ' src={mask_Group} alt="mask_Group" />
                 <div className='absolute left-[-60px] bottom-[32px]'>
                     <Rounded_Line />
                 </div>
