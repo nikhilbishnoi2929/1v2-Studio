@@ -38,23 +38,21 @@ module.exports = {
       },
       backgroundImage: {
         header_Bg: `url("./assets/image/webp/hero_Bg.webp")`,
-         footer_bg: `url("./assets/image/webp/footer_Bg.webp")`,
+        footer_bg: `url("./assets/image/webp/footer_Bg.webp")`,
         card_footer: `url("./assets/image/webp/footer_Card_Bg.webp")`,
         feature_Project: `url("./assets/image/webp/feature_Bg.webp")`,
         card_Slider: `url("./assets/image/webp/Projects_Slider_One.webp")`,
         impact_Bg: `url("./assets/image/webp/Impact_Bg.webp")`,
         clients_Bg: `url("./assets/image/webp/clients_Bg.webp")`,
         hagenes_Bg: `url("./assets/image/webp/Hagenes_Bg.webp")`,
-         accordion_Bg: `url("./assets/image/webp/accordion_Bg.webp")`,
-         accordion_Color: `linear-gradient(0deg, #9E0000 -14.1%, #FF1212 123.08%)`,
+        accordion_Bg: `url("./assets/image/webp/accordion_Bg.webp")`,
+        accordion_Color: `linear-gradient(0deg, #9E0000 -14.1%, #FF1212 123.08%)`,
         linear_Gradient: `linear-gradient(108.48deg, #FF1E2F 8.2%, #3EBFFF 31.38%)`,
-         
       },
       boxShadow: {
         "3xl": "0px 2.29px 23.91px 0px #FF55A5"
- 
       },
-      fontSize:{
+      fontSize: {
         40: "40px",
         42: "42px",
         38: "38px",
@@ -63,10 +61,6 @@ module.exports = {
       backgroundSize: {
         "100%": "100% 100%",
       },
-      backdropBlur: {
-        '100': '100px',
-      },
-      
     },
   },
   plugins: [],
