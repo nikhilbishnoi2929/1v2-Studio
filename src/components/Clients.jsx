@@ -29,12 +29,11 @@ const Clients = () => {
       </div>
     ),
   };
-  
   return (
     <div className=' bg-clients_Bg mt-[-2px] relative bg-black bg-cover bg-no-repeat'>
       <div className='flex justify-center relative pt-[87px] max-lg:pt-[79px] max-sm:pt-0 max-md:pt-[70px]'>
-        <h2 className='font-orbitron font-bold text-center md:text-start text-42 max-md:text-[38px] max-sm:text-[30px] max-sm:leading-[39px] max-md:leading-[45px] leading-[54.6px] text-white about_Line_Bottom'>Clients Testimonials</h2>
-        <img src={clients_Svg} alt="about_Line_Bottom" className='absolute h-[57px] xl:block hidden w-full bottom-[-17px] left-0' />
+        <h2 className='font-orbitron font-bold text-center md:text-start text-42 z-10 max-md:text-[38px] max-sm:text-[30px] max-sm:leading-[39px] max-md:leading-[45px] leading-[54.6px] text-white about_Line_Bottom'>Clients Testimonials</h2>
+        <img src={clients_Svg} alt="about_Line_Bottom" className='absolute h-[57px] z-0 xl:block hidden w-full bottom-[-17px] left-0' />
       </div>
       <div className='container max-w-[1164px] px-3 mx-auto pb-[89px] relative'>
       
@@ -119,13 +118,10 @@ const Clients = () => {
         <Rounded_Line/>
       </div>
       </div>
-      
    <img src={clients_Ellips} className=' absolute right-[0px] max-md:hidden z-0 bottom-[-152px]' alt="clients_Ellips" />
    <img src={clients_Ellips} className=' absolute right-[0px] max-md:hidden z-0 top-[-252px]' alt="clients_Ellips" />
    <img src={clients_Ellips_Right} className=' absolute left-[0px] max-md:hidden z-0 bottom-[-200px]' alt="clients_Ellips" />
-   
     </div>
   )
 }
-
 export default Clients

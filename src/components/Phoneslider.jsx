@@ -7,8 +7,6 @@ import slider_Img_5 from '../assets/image/webp/slider_Five_Img.webp'
 import slider_Img_6 from '../assets/image/webp/slider_Six_Img.webp'
 import Slider from "react-slick";
 
-
-
 const Phoneslider = () => {
     var settings = {
         dots: false,
