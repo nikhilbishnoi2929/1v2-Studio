@@ -1,11 +1,10 @@
 import React from 'react'
 import bottom_Text_Line from '../assets/image/svg/text_Bottom_Line.svg'
 import pushing_Boundaries from '../assets/image/webp/pushing_Boundaries.webp'
-import studio_Ellips from '../assets/image/svg/sludio_Ellips.svg';
+import studioEllips from '../assets/image/svg/sludioSvg.svg';
 import position_Bg from '../assets/image/svg/position_Bg.svg'
 import { Rounded_Line } from '../common/Icon';
-import clients_Ellips from '../assets/image/svg/client_Ellips.svg';
-
+import clientsSvg from '../assets/image/svg/clientEllips.svg';
 const Studio = () => {
     return (
         <div className=' bg-black relative mt-[-2px]' id='section_2'>
@@ -18,7 +17,7 @@ const Studio = () => {
                     <div className='lg:w-6/12 w-[100%] flex lg:justify-start justify-center px-3' data-aos="fade-down-right">
                         <div className=' relative'>
                             <img className=' w-full max-w-[517px] z-20 relative max-lg:max-w-[460px] max-md:max-w-[400px]' src={pushing_Boundaries} alt="pushing_Boundaries" />
-                            <img src={studio_Ellips} className=' absolute top-[-140px] pointer-events-none left-[-90px] z-0 ' alt="studio_Ellips" />
+                            <img src={studioEllips} className=' absolute top-[-140px] pointer-events-none left-[-90px] z-0 ' alt="studio_Ellips" />
                         </div>
                     </div>
                     <div className='lg:w-6/12 w-[100%] px-3 flex items-center lg:justify-end justify-center max-lg:pt-12 ' data-aos="fade-down-left">
@@ -37,7 +36,7 @@ const Studio = () => {
                 </div>
             </div>
             <img src={position_Bg} className='absolute top-[24%] right-0 z-0' alt="position_Bg" />
-            <img src={clients_Ellips} className=' absolute right-0 max-md:hidden z-0 top-[-250px]' alt="clients_Ellips" />
+            <img src={clientsSvg} className=' absolute right-0 max-md:hidden z-0 top-[-250px]' alt="clients_Ellips" />
         </div>
     )
 }

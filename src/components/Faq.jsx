@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Faq_Svg from '../assets/image/svg/faq_Line.svg';
-
 const Faq = () => {
     const faqs = [
         {
@@ -29,13 +28,13 @@ const Faq = () => {
                 "1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.",
         },
     ];
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, ACCORDION_INDEX] = useState(null);
     const toggleAccordion = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
+        ACCORDION_INDEX(activeIndex === index ? null : index);
     };
     return (
-        <div className=' bg-accordion_Bg bg-black bg-no-repeat bg-cover mt-[-2px] lg:pb-[55px] md:pb-[48px] max-sm:pb-[15px] pb-3' id='section_5'>
-            <div className=' container mx-auto px-3'>
+        <div className='bg-accordionBg bg-black bg-no-repeat bg-cover mt-[-2px] lg:pb-[55px] md:pb-[48px] max-sm:pb-[15px] pb-3' id='section_5'>
+            <div className='container mx-auto px-3'>
                 <div className='flex justify-center relative pt-[101px] max-lg:pt-[80px] max-md:pt-[70px] max-sm:pt-12'>
                     <h2 className='font-orbitron font-bold text-42 max-md:text-[38px] max-sm:text-[35px] max-sm:leading-[39px] max-md:leading-[45px] leading-[54.6px] text-white'>
                         FAQ
@@ -47,16 +46,16 @@ const Faq = () => {
                     />
                 </div>
             </div>
-            <div className=' container max-w-[1164px] px-3'>
-                <div className=' max-w-[480px] sm:max-w-[576px] z-30 md:max-w-[768px] lg:max-w-[884px] mx-auto lg:pt-[72px] md:pt-16 pt-14' data-aos="zoom-in-up">
+            <div className='container max-w-[1164px] px-3'>
+                <div className='max-w-[480px] sm:max-w-[576px] z-30 md:max-w-[768px] lg:max-w-[884px] mx-auto lg:pt-[72px] md:pt-16 pt-14' data-aos="zoom-in-up">
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className={` overflow-hidden ease-linear custom_duration ${activeIndex === index ? " z-30 border-[1px] border-sky_border bg-accordion_Color shadow_border" : "border-transparent"} mt-6`}
+                            className={`overflow-hidden ease-linear ${activeIndex === index ? " z-30 border-[1px] border-sky_border bg-accordion_Color shadow_border" : "border-transparent"} mt-6`}
                         >
                             <button
                                 onClick={() => toggleAccordion(index)}
-                                className={`${activeIndex === index ? "p-[10px_10px_0px_10px] z-30 lg:p-[21px_20px_0px_20px] border-transparent" : "p-2 lg:p-[21px_20px]"} w-full text-left bg-blur_black backdrop-blur-lg flex items-center justify-between border-[1px] border-[#FFFFFF4D] transition custom_duration ease-in-out `}
+                                className={`${activeIndex === index ? "p-[10px_10px_0px_10px] z-30 lg:p-[21px_20px_0px_20px] border-transparent" : "p-2 lg:p-[21px_20px]"} w-full text-left bg-blur_black backdrop-blur-lg flex items-center justify-between border-[1px] border-[#FFFFFF4D] transition ease-in-out `}
                             >
                                 <span className="font-orbitron font-medium text-base leading-6 z-30 sm:text-lg md:text-[20px] md:leading-[26px] lg:text-2xl lg:leading-9 text-white">{faq.question}</span>
                                 <span className="float-right z-30">
@@ -72,21 +71,19 @@ const Faq = () => {
 
                             </button>
                             <div
-                                className={`overflow-hidden ease-linear duration-300 ${activeIndex === index ? "h-auto" : "max-h-0"
+                                className={`overflow-hidden ease-linear ${activeIndex === index ? "h-auto" : "max-h-0"
                                     }`}
                             >
-                                <div className=" font-poppins font-normal text-[15px] leading-[20px] lg:text-[18px] lg:leading-[28px] opacity-70 text-white max-w-[759px] p-[2px_8px_8px_8px] lg:p-[6px_20px_17px_20px]">
+                                <div className="font-poppins font-normal text-[15px] leading-[20px] lg:text-[18px] lg:leading-[28px] opacity-70 text-white max-w-[759px] p-[2px_8px_8px_8px] lg:p-[6px_20px_17px_20px]">
                                     <p>{faq.answer}</p>
                                 </div>
                             </div>
                         </div>
                     ))}
-
-
                 </div>
             </div>
         </div>
     )
 }
-export default Faq
+export default Faq;
 

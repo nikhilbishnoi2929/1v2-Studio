@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .after_border {
   position: relative;
 }
@@ -63,21 +62,19 @@
 }
 
 .btn_Contact:hover {
-  /* background-image: url(../src/assets/image/svg/hover_Btn.svg);
-  background-repeat: no-repeat; */
   transform: scale(0.9);
-  
+
 }
 
 .custom_duration {
   transition: all 500ms linear !important;
 }
 
-.after_Newsltter {
+.after_Newsletter {
   position: relative;
 }
 
-.after_Newsltter::after {
+.after_Newsletter::after {
   content: "";
   position: absolute;
   background-image: url(./assets/image/svg/our_Newletter_Top.svg);
@@ -87,7 +84,7 @@
   left: -11px;
 }
 
-.after_Newsltter_2::before {
+.after_Newsletter_2::before {
   content: "";
   position: absolute;
   background-image: url(./assets/image/svg/our_Newletter_Bottom.svg);
@@ -96,11 +93,9 @@
   bottom: -10px;
   right: -25px;
 }
-
 .gaming_After {
   position: relative;
 }
-
 .gaming_After::after {
   content: "";
   position: absolute;
@@ -113,15 +108,13 @@
   top: 5px;
   left: -5px;
 }
-
 .feature_Slider .slick-track {
   display: flex !important;
 }
+
 .feature_Slider .slick-track .slick-slide {
   margin: 0 12px;
 }
-
-
 .gaming_Before::before {
   content: "";
   position: absolute;
@@ -134,7 +127,6 @@
   bottom: -3px;
   right: 103px;
 }
-
 .gaming_Before_2::before {
   content: "";
   position: absolute;
@@ -147,25 +139,20 @@
   bottom: -3px;
   right: -20px;
 }
-
 .slider_center .slick-track {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
 }
-
-
 .slider-dots {
   position: absolute;
   bottom: -50px;
   display: flex;
   align-items: center;
 }
-
 .slick-dots li.slick-active button:before {
   font-size: 0;
 }
-
 .slick-dots li button:before {
   font-size: 0 !important;
   width: 100% !important;
@@ -175,33 +162,34 @@
   background: white;
   opacity: 70%;
   border-radius: 8px !important;
-  width: 50px !important; 
-  height: 10px !important; 
+  width: 50px !important;
+  height: 10px !important;
   margin: 0px 8px !important;
   cursor: pointer;
   transition: all 200ms linear;
 }
-.slick-dots{
-gap: 10px !important;
-display: flex !important;
+.slick-dots {
+  gap: 10px !important;
+  display: flex !important;
 }
-.slick-dots li.slick-active{
+.hover_effect:hover {
+  transform: scale(1.1);
+}
+.slick-dots li.slick-active {
   background: linear-gradient(90deg, #FF1E2F 0%, #3EBFFF 100%);
   border-radius: 30px;
   height: 10px;
   width: 172px !important;
 }
-
-/* Ensure transitions are applied */
 .transition-transform {
   transition: transform 0.3s ease;
 }
 /* .cross span:first-child {
   transform: rotate(45deg) translateY(13px) translateX(4px);
-  }
-  .cross span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-13px) translateX(4px);
-    } */
+}
+.cross span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-13px) translateX(4px);
+} */
 @media (max-width: 1040px) {
   .gaming_Before::before {
     right: 40px;
@@ -235,19 +223,21 @@ display: flex !important;
 }
 
 @media (max-width: 768px) {
-  .after_Newsltter::after {
+  .after_Newsletter::after {
     display: none;
   }
 
-  .after_Newsltter_2::before {
+  .after_Newsletter_2::before {
     display: none;
   }
 }
+
 @media (max-width: 575px) {
-  .slick-dots li.slick-active{
+  .slick-dots li.slick-active {
     width: 100px !important;
   }
+
   .slick-dots li {
-    width: 30px !important; 
+    width: 30px !important;
   }
 }
