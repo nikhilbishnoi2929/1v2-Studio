@@ -63,8 +63,10 @@
 }
 
 .btn_Contact:hover {
-  background-image: url(../src/assets/image/svg/hover_Btn.svg);
-  background-repeat: no-repeat;
+  /* background-image: url(../src/assets/image/svg/hover_Btn.svg);
+  background-repeat: no-repeat; */
+  transform: scale(0.9);
+  
 }
 
 .custom_duration {
