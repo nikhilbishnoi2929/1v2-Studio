@@ -45,7 +45,7 @@
 .get_started_btn::before {
   content: "";
   position: absolute;
-  background-image: url(../src/assets/image/svg/get_Started_Btn.svg);
+  background-image: url(../src/assets/image/webp/getButton.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@
 }
 
 .btn_Contact {
-  background-image: url(../src/assets/image/svg/get_Started_Btn.svg);
+  background-image: url(../src/assets/image/webp/getButton.webp);
   background-repeat: no-repeat;
 }
 
@@ -184,12 +184,20 @@
 .transition-transform {
   transition: transform 0.3s ease;
 }
-/* .cross span:first-child {
-  transform: rotate(45deg) translateY(13px) translateX(4px);
+ 
+.cross span:nth-child(1) {
+  transform: rotate(45deg) translateY(13px) translateX(0px);
 }
+
+.cross span:nth-child(2) {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
 .cross span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-13px) translateX(4px);
-} */
+  transform: rotate(-45deg) translateY(-13px) translateX(0px);
+}
+  
 @media (max-width: 1040px) {
   .gaming_Before::before {
     right: 40px;

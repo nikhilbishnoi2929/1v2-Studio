@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Faq_Svg from '../assets/image/svg/faq_Line.svg';
+import FaqSvg from '../assets/image/svg/faq_Line.svg';
 const Faq = () => {
     const faqs = [
         {
@@ -40,9 +40,9 @@ const Faq = () => {
                         FAQ
                     </h2>
                     <img
-                        src={Faq_Svg}
+                        src={FaqSvg}
                         alt="about_Line_Bottom"
-                        className='absolute xl:block hidden h-[57px] w-full bottom-[-17px] left-0'
+                        className='absolute pointer-events-none xl:block hidden h-[57px] w-full bottom-[-17px] left-0'
                     />
                 </div>
             </div>
