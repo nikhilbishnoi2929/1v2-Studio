@@ -93,9 +93,11 @@
   bottom: -10px;
   right: -25px;
 }
+
 .gaming_After {
   position: relative;
 }
+
 .gaming_After::after {
   content: "";
   position: absolute;
@@ -108,6 +110,7 @@
   top: 5px;
   left: -5px;
 }
+
 .feature_Slider .slick-track {
   display: flex !important;
 }
@@ -115,6 +118,7 @@
 .feature_Slider .slick-track .slick-slide {
   margin: 0 12px;
 }
+
 .gaming_Before::before {
   content: "";
   position: absolute;
@@ -127,6 +131,7 @@
   bottom: -3px;
   right: 103px;
 }
+
 .gaming_Before_2::before {
   content: "";
   position: absolute;
@@ -139,25 +144,30 @@
   bottom: -3px;
   right: -20px;
 }
+
 .slider_center .slick-track {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
 }
+
 .slider-dots {
   position: absolute;
   bottom: -50px;
   display: flex;
   align-items: center;
 }
+
 .slick-dots li.slick-active button:before {
   font-size: 0;
 }
+
 .slick-dots li button:before {
   font-size: 0 !important;
   width: 100% !important;
   height: 100% !important;
 }
+
 .slick-dots li {
   background: white;
   opacity: 70%;
@@ -168,23 +178,27 @@
   cursor: pointer;
   transition: all 200ms linear;
 }
+
 .slick-dots {
   gap: 10px !important;
   display: flex !important;
 }
+
 .hover_effect:hover {
   transform: scale(1.1);
 }
+
 .slick-dots li.slick-active {
   background: linear-gradient(90deg, #FF1E2F 0%, #3EBFFF 100%);
   border-radius: 30px;
   height: 10px;
   width: 172px !important;
 }
+
 .transition-transform {
   transition: transform 0.3s ease;
 }
- 
+
 .cross span:nth-child(1) {
   transform: rotate(45deg) translateY(13px) translateX(0px);
 }
@@ -197,7 +211,7 @@
 .cross span:nth-child(3) {
   transform: rotate(-45deg) translateY(-13px) translateX(0px);
 }
-  
+
 @media (max-width: 1040px) {
   .gaming_Before::before {
     right: 40px;

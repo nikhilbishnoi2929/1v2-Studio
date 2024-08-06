@@ -1,6 +1,7 @@
 import React from 'react'
 import clientsSvgOne from '../assets/image/svg/Clients_svg.svg'
-import { FiveStar, RoundedLine } from '../common/Icon'
+import { FiveStar } from '../common/Icon'
+import roundedEllipse from '../assets/image/png/roundedEllipse.png'
 import girlImg from '../assets/image/webp/girl_Img.webp'
 import Slider from "react-slick";
 import clientsSvg from '../assets/image/svg/clientEllips.svg';
@@ -111,9 +112,7 @@ const Clients = () => {
 
           </Slider>
         </div>
-        <div className='max-md:hidden z-0 max-lg:hidden absolute right-[-45px] max-xl:right-[12px] bottom-[-112px]'>
-          <RoundedLine />
-        </div>
+          <img src={roundedEllipse} alt="roundedEllipse" className='max-md:hidden z-0 max-lg:hidden absolute right-[-45px] max-xl:right-[12px] bottom-[-112px]' />
       </div>
       <img src={clientsSvg} className='absolute right-[0px] max-md:hidden z-0 bottom-[-152px]' alt="clientsSvg" />
       <img src={clientsSvg} className='absolute right-[0px] max-md:hidden z-0 top-[-252px]' alt="clientsSvg" />

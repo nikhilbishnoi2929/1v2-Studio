@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import pageLogo from '../assets/image/svg/logo.svg';
 import maskGroup from '../assets/image/png/mask_Group.png';
-import { RoundedLine } from '../common/Icon';
-
+import roundedEllipse from '../assets/image/png/roundedEllipse.png'
 const Header = () => {
     const [data, setData] = useState(false);
     useEffect(() => {
@@ -56,9 +55,7 @@ const Header = () => {
                     </div>
                 </div>
                 <img className='absolute bottom-[105px] max-md:hidden max-sm:bottom-[15px] pointer-events-none z-0 right-0 ' src={maskGroup} alt="mask_Group" />
-                <div className='absolute left-[-60px] bottom-[32px]'>
-                    <RoundedLine />
-                </div>
+                   <img src={roundedEllipse} alt="roundedEllipse" className='absolute left-[-60px] bottom-[32px]'/>
             </div>
         </div>
     );

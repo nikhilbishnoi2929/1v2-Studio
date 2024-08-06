@@ -1,7 +1,7 @@
 import React from 'react'
 import our_Impact from '../assets/image/svg/our_Impact_Line.svg'
 import impact_Studio from '../assets/image/webp/Impact_Studio.webp'
-import { RoundedLine } from '../common/Icon';
+import roundedEllipse from '../assets/image/png/roundedEllipse.png'
 import clientsRight from '../assets/image/svg/client_Right.svg';
 import importRed from '../assets/image/svg/import_Red_Ellips.svg'
 const Impact = () => {
@@ -26,9 +26,7 @@ const Impact = () => {
             </div>
           </div>
         </div>
-        <div className='absolute left-[-64px] max-xl:left-3 z-10 bottom-[-96px] max-lg:left-[12px] max-lg:hidden'>
-          <RoundedLine />
-        </div>
+        <img src={roundedEllipse} alt="roundedEllipse" className='absolute left-[-64px] max-xl:left-3 z-10 bottom-[-96px] max-lg:left-[12px] max-lg:hidden'/>
       </div>
       <img src={clientsRight} className='absolute left-[0px] z-0 pointer-events-none top-[-290px]' alt="clients_Right" />
     </div>

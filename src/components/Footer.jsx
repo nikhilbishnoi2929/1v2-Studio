@@ -1,6 +1,7 @@
 import React from 'react'
 import logo_Img from '../assets/image/svg/logo.svg';
-import { RoundedLine, TwitterIcon } from '../common/Icon';
+import { TwitterIcon } from '../common/Icon';
+import roundedEllipse from '../assets/image/png/roundedEllipse.png'
 import { DiscordIcon } from '../common/Icon';
 import footerEllipse from '../assets/image/svg/footer_Ellips.svg';
 import ellipseFooter from '../assets/image/svg/ellips_Footer.svg';
@@ -39,13 +40,9 @@ const Footer = () => {
           </div>
         </div>
         <img src={footerEllipse} className='absolute top-[-44px] left-[280px] hidden lg:block hidden37 z-0' alt="footerEllipse" />
-        <img src={ellipseCard} className='absolute max-md:hidden top-[56px]' alt="ellipse_Card" />
-        <div className='left-[-67px] max-xl:left-[15px] max-lg:hidden absolute top-[-60px]'>
-          <RoundedLine />
-        </div>
-        <div className='right-[-68px] max-xl:right-[15px] max-lg:hidden absolute bottom-[90px]'>
-          <RoundedLine />
-        </div>
+        <img src={ellipseCard} className='absolute max-md:hidden top-[56px]' alt="ellipse_Card" />  
+          <img src={roundedEllipse} alt="roundedEllipse" className='left-[-67px] max-xl:left-[15px] max-lg:hidden absolute top-[-60px]'/> 
+          <img src={roundedEllipse} alt="roundedEllipse" className='right-[-68px] max-xl:right-[15px] max-lg:hidden absolute bottom-[90px]'/>
       </div>
       <div className='w-full h-[2px] bg-[#FFFFFF21]'>
       </div>
