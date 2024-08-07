@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Phone_Slider from './components/Phone_Slider';
+import PhoneSlider from './components/PhoneSlider';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Studio from './components/Studio';
@@ -9,7 +9,7 @@ import Feature from './components/Feature';
 import Impact from './components/Impact';
 import Clients from './components/Clients';
 import Faq from './components/Faq';
-import TopButton from './components/Top_Button'
+import TopButton from './components/TopButton'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -24,7 +24,7 @@ function App() {
   return (
     <main className=' overflow-hidden max-w-[1920px] mx-auto'>
       <Header />
-      <Phone_Slider />
+      <PhoneSlider />
       <Studio />
       <Feature />
       <Impact />

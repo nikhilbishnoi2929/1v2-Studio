@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-const Top_Button = () => {
+const TopButton = () => {
     const [visible, setVisible] = useState(false);
 
     const toggleVisibility = () => {
@@ -29,4 +29,4 @@ const Top_Button = () => {
         </button>
     );
 };
-export default Top_Button;
+export default TopButton;

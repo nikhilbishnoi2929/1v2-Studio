@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import pageLogo from '../assets/image/svg/logo.svg';
-import maskGroup from '../assets/image/png/mask_Group.png';
+import maskGroup from '../assets/image/png/maskGroup.png';
 import roundedEllipse from '../assets/image/png/roundedEllipse.png'
 const Header = () => {
     const [data, setData] = useState(false);

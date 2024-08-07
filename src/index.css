@@ -186,8 +186,7 @@
 
 .hover_effect:hover {
   transform: scale(1.1);
-}
-
+} 
 .slick-dots li.slick-active {
   background: linear-gradient(90deg, #FF1E2F 0%, #3EBFFF 100%);
   border-radius: 30px;

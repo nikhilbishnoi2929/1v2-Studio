@@ -6,7 +6,7 @@ import sliderImg4 from '../assets/image/webp/slider_Four_Img.webp'
 import sliderImg5 from '../assets/image/webp/slider_Five_Img.webp'
 import sliderImg6 from '../assets/image/webp/slider_Six_Img.webp'
 import Slider from "react-slick";
-const Phone_Slider = () => {
+const PhoneSlider = () => {
   var settings = {
     dots: false,
     infinite: true,
@@ -62,4 +62,4 @@ const Phone_Slider = () => {
     </div>
   )
 }
-export default Phone_Slider
+export default PhoneSlider

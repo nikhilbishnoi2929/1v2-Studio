@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import FaqSvg from '../assets/image/svg/faq_Line.svg';
 const Faq = () => {
-    const faqs = [
+    const FAQS = [
         {
             question: "What is 1v2 Studio?",
             answer:
@@ -48,7 +48,7 @@ const Faq = () => {
             </div>
             <div className='container max-w-[1164px] px-3'>
                 <div className='max-w-[480px] sm:max-w-[576px] z-30 md:max-w-[768px] lg:max-w-[884px] mx-auto lg:pt-[72px] md:pt-16 pt-14' data-aos="zoom-in-up">
-                    {faqs.map((faq, index) => (
+                    {FAQS.map((faq, index) => (
                         <div
                             key={index}
                             className={`overflow-hidden ease-linear ${activeIndex === index ? " z-30 border-[1px] border-sky_border bg-accordion_Color shadow_border" : "border-transparent"} mt-6`}
