@@ -2,10 +2,10 @@ import React from 'react'
 import clientsSvgOne from '../assets/image/svg/Clients_svg.svg'
 import { FiveStar } from '../common/Icon'
 import roundedEllipse from '../assets/image/png/roundedEllipse.png'
-import girlImg from '../assets/image/webp/girl_Img.webp'
+import girlImg from '../assets/image/webp/girlImg.webp'
 import Slider from "react-slick";
 import clientsSvg from '../assets/image/svg/clientEllips.svg';
-import clients_Right from '../assets/image/svg/client_Right.svg';
+import clientsRight from '../assets/image/svg/clientRight.svg';
 const Clients = () => {
   var settings = {
     dots: true,
@@ -116,7 +116,7 @@ const Clients = () => {
       </div>
       <img src={clientsSvg} className='absolute right-[0px] max-md:hidden z-0 bottom-[-152px]' alt="clientsSvg" />
       <img src={clientsSvg} className='absolute right-[0px] max-md:hidden z-0 top-[-252px]' alt="clientsSvg" />
-      <img src={clients_Right} className='absolute left-[0px] max-md:hidden z-0 bottom-[-200px]' alt="clients_Right" />
+      <img src={clientsRight} className='absolute left-[0px] max-md:hidden z-0 bottom-[-200px]' alt="clientsRight" />
     </div>
   )
 };

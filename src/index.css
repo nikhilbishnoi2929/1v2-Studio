@@ -11,7 +11,7 @@
 .after_border:hover::after {
   content: "";
   position: absolute;
-  background-image: url(../src/assets/image/svg/btn_Border_Top.svg);
+  background-image: url(../src/assets/image/svg/btnBorderTop.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 .after_border_b:hover:before {
   content: "";
   position: absolute;
-  background-image: url(../src/assets/image/svg/btn_Border_Bottom.svg);
+  background-image: url(../src/assets/image/svg/btnBorderBottom.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

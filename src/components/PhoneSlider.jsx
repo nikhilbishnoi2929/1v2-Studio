@@ -1,10 +1,10 @@
 import React from 'react'
-import sliderImg1 from '../assets/image/webp/slider_One_Img.webp'
-import sliderImg2 from '../assets/image/webp/slider_Two_Img.webp'
-import sliderImg3 from '../assets/image/webp/slider_Three_Img.webp'
-import sliderImg4 from '../assets/image/webp/slider_Four_Img.webp'
-import sliderImg5 from '../assets/image/webp/slider_Five_Img.webp'
-import sliderImg6 from '../assets/image/webp/slider_Six_Img.webp'
+import sliderImg1 from '../assets/image/webp/sliderOneImg.webp'
+import sliderImg2 from '../assets/image/webp/sliderTwoImg.webp'
+import sliderImg3 from '../assets/image/webp/sliderThreeImg.webp'
+import sliderImg4 from '../assets/image/webp/sliderFourImg.webp'
+import sliderImg5 from '../assets/image/webp/sliderFiveImg.webp'
+import sliderImg6 from '../assets/image/webp/sliderSixImg.webp'
 import Slider from "react-slick";
 const PhoneSlider = () => {
   var settings = {

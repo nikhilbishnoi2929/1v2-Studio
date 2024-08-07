@@ -1,11 +1,11 @@
 import React from 'react'
-import bottomTextLine from '../assets/image/svg/text_Bottom_Line.svg'
-import projectSliderOne from '../assets/image/webp/project_Slider_One.webp'
-import projectSliderTwo from '../assets/image/webp/project_Slider_two.webp'
-import projectSliderThree from '../assets/image/webp/project_Slider_Three.webp'
-import projectSliderFour from '../assets/image/webp/Project_Slider_four.webp'
+import bottomTextLine from '../assets/image/svg/textBottomLine.svg'
+import projectSliderOne from '../assets/image/webp/projectSliderOne.webp'
+import projectSliderTwo from '../assets/image/webp/projectSliderTwo.webp'
+import projectSliderThree from '../assets/image/webp/projectSliderThree.webp'
+import projectSliderFour from '../assets/image/webp/ProjectSliderFour.webp'
 import Slider from "react-slick";
-import clientsRight from '../assets/image/svg/client_Right.svg';
+import clientsRight from '../assets/image/svg/clientRight.svg';
 const Feature = () => {
     var setting_s = {
         dots: true,

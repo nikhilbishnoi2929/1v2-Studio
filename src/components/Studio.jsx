@@ -1,8 +1,8 @@
 import React from 'react'
-import bottomTextLine from '../assets/image/svg/text_Bottom_Line.svg'
-import pushingBoundaries from '../assets/image/webp/pushing_Boundaries.webp'
+import bottomTextLine from '../assets/image/svg/textBottomLine.svg'
+import pushingBoundaries from '../assets/image/webp/pushingBoundaries.webp'
 import studioEllipse from '../assets/image/svg/sludioSvg.svg';
-import position_Bg from '../assets/image/svg/position_Bg.svg'
+import positionBg from '../assets/image/svg/positionBg.svg'
 import roundedEllipse from '../assets/image/png/roundedEllipse.png'
 import clientsSvg from '../assets/image/svg/clientEllips.svg';
 const Studio = () => {
@@ -31,7 +31,7 @@ const Studio = () => {
                 </div>
                     <img src={roundedEllipse} alt="roundedEllipse" className='absolute right-[-65px] max-xl:right-3 max-md:hidden bottom-[44px] z-0'/>
             </div>
-            <img src={position_Bg} className='absolute top-[24%] right-0 z-0' alt="position_Bg" />
+            <img src={positionBg} className='absolute top-[24%] right-0 z-0' alt="positionBg" />
             <img src={clientsSvg} className=' absolute right-0 max-md:hidden z-0 top-[-250px]' alt="clients_Ellips" />
         </div>
     )

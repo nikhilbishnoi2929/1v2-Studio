@@ -6,7 +6,7 @@ import { DiscordIcon } from '../common/Icon';
 import footerEllipse from '../assets/image/svg/footer_Ellips.svg';
 import ellipseFooter from '../assets/image/svg/ellips_Footer.svg';
 import ellipseFooterTwo from '../assets/image/svg/ellips_Footer_Two.svg';
-import ellipseCard from '../assets/image/svg/card_Bg_Ellips.svg';
+import ellipseCard from '../assets/image/svg/cardBgEllipse.svg';
 import footerSvgThree from '../assets/image/svg/footer_Ellipse_Three.svg';
 import footerSvgFour from '../assets/image/svg/footer_Ellips_Four.svg';
 const Footer = () => {

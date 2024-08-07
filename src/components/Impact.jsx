@@ -1,8 +1,8 @@
 import React from 'react'
 import our_Impact from '../assets/image/svg/our_Impact_Line.svg'
-import impact_Studio from '../assets/image/webp/Impact_Studio.webp'
+import impactStudio from '../assets/image/webp/impactStudio.webp'
 import roundedEllipse from '../assets/image/png/roundedEllipse.png'
-import clientsRight from '../assets/image/svg/client_Right.svg';
+import clientsRight from '../assets/image/svg/clientRight.svg';
 import importRed from '../assets/image/svg/import_Red_Ellips.svg'
 const Impact = () => {
   return (
@@ -16,7 +16,7 @@ const Impact = () => {
           <div className='flex items-center z-20 flex_wrap justify-center gap-9 max-xl:gap-6 max-lg:gap-9' data-aos="zoom-in">
             <h2 className='font-orbitron z-20 font-bold text-64 leading-[83px] text-white xl:max-w-[312px] max-md:text-[52px] max-md:leading-[53px] max-lg:text-[54px] max-lg:leading-[70px] max-sm:text-[32px]'>What 1v2 Studio</h2>
             <div className='relative'>
-              <img className='max-w-[445px] z-20 max-md:max-w-[400px] pointer-events-none relative max-sm:max-w-[350px] w-full' src={impact_Studio} alt="impact_Studio" />
+              <img className='max-w-[445px] z-20 max-md:max-w-[400px] pointer-events-none relative max-sm:max-w-[350px] w-full' src={impactStudio} alt="impactStudio" />
               <img src={importRed} alt="import_Red" className='absolute pointer-events-none top-[-120px] z-0 left-0' />
             </div>
             <div className='flex-col z-20 text-center md:text-start'>
@@ -28,7 +28,7 @@ const Impact = () => {
         </div>
         <img src={roundedEllipse} alt="roundedEllipse" className='absolute left-[-64px] max-xl:left-3 z-10 bottom-[-96px] max-lg:left-[12px] max-lg:hidden'/>
       </div>
-      <img src={clientsRight} className='absolute left-[0px] z-0 pointer-events-none top-[-290px]' alt="clients_Right" />
+      <img src={clientsRight} className='absolute left-[0px] z-0 pointer-events-none top-[-290px]' alt="clientsRight" />
     </div>
   )
 }

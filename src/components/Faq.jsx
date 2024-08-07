@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import FaqSvg from '../assets/image/svg/faq_Line.svg';
+import FaqSvg from '../assets/image/svg/faqLine.svg';
 const Faq = () => {
     const FAQS = [
         {
