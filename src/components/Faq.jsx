@@ -30,7 +30,7 @@ const Faq = () => {
     ];
     const [activeIndex, ACCORDION_INDEX] = useState(null);
     const toggleAccordion = (index) => {
-        ACCORDION_INDEX(activeIndex === index ? null : index);
+    ACCORDION_INDEX(activeIndex === index ? null : index);
     };
     return (
         <div className='bg-accordionBg bg-black bg-no-repeat bg-cover mt-[-2px] lg:pb-[55px] md:pb-[48px] max-sm:pb-[15px] pb-3' id='section_5'>
@@ -45,7 +45,7 @@ const Faq = () => {
                         className='absolute pointer-events-none xl:block hidden h-[57px] w-full bottom-[-17px] left-0'
                     />
                 </div>
-            </div>
+            </div>    
             <div className='container max-w-[1164px] px-3'>
                 <div className='max-w-[480px] sm:max-w-[576px] z-30 md:max-w-[768px] lg:max-w-[884px] mx-auto lg:pt-[72px] md:pt-16 pt-14' data-aos="zoom-in-up">
                     {FAQS.map((faq, index) => (
@@ -68,7 +68,6 @@ const Faq = () => {
                                         <path d="M13 19L19 19H21L27 19C27.5523 19 28 19.4477 28 20C28 20.5523 27.5523 21 27 21L21 21L19 21L13 21C12.4477 21 12 20.5523 12 20C12 19.4477 12.4477 19 13 19Z" fill="white" />
                                     </svg>
                                 </span>
-
                             </button>
                             <div
                                 className={`overflow-hidden ease-linear ${activeIndex === index ? "h-auto" : "max-h-0"
